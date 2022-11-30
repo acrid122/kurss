@@ -150,7 +150,7 @@ window.onload = () => {
         if(fl == false){
             menu_info.classList.add('active-m-info');
             news[count].classList.add('active-news');
-            let slice_name = elements.src.slice(0, elements.src.indexOf('.'));
+            let slice_name = elements.src.slice(0, elements.src.lastIndexOf('.'));
             body.style.backgroundImage = 'url(' + slice_name + '_bl.jpg)';
             return_but.classList.add('active-ret');
             slider.classList.add('active');
