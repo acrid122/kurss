@@ -103,7 +103,7 @@ window.onload = () => {
             }
         }
         if(fl == true){
-            let slice_name = all_images[count].src.slice(0, all_images[count].src.indexOf('.'));
+            let slice_name = all_images[count].src.slice(0, all_images[count].src.lastIndexOf('.'));
             init();
             body.style.backgroundImage = 'url(' + slice_name + '_bl.jpg)';
         }
