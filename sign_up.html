@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!--Мета теги-->
+    <meta name='viewport' content='width=device-width,initial-scale=1'/>
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+    <!--Иконка-->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel = "stylesheet" href = "css/sign_up.css">
+    <!--Название сайта-->
+    <title>GenBlock</title>
+    </head>
+    <body>
+        <div class="login-box">
+            <h2 id = "sign-up-text">Регистрация</h2>
+            <form>
+              <div class="user-box">
+                <input type = "text" pattern="[A-Za-z0-9]{5,}" name = "nickname" id = "nickname" required placeholder="Имя пользователя">
+                <label>Имя пользователя</label>
+              </div>
+              <div class="user-box">
+                <input maxlength = "30" type = "password" name = "password" id = "password" required placeholder="Пароль">
+                <label>Пароль</label>
+              </div>
+              <div class="user-box">
+                <input type = "email" name = "email" id = "email" required placeholder= "Почта">
+                <label>Почта</label>
+              </div>
+              <p class="percent">0%</p>
+              <div id ="progress-bar">
+              </div>
+              <a href="#" id = "submit_1">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Отправить
+              </a>
+            </form>
+          </div>
+          <script src = "js/sign_up.js"></script>
+    </body>
+</html>
