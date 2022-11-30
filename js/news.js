@@ -53,7 +53,7 @@ window.onload = () => {
             }
         }
         if(fl == true){
-            let slice_name = all_images[count].src.slice(0, all_images[count].src.indexOf('.'));
+            let slice_name = all_images[count].src.slice(0, all_images[count].src.lastIndexOf('.'));
             init();
             body.style.backgroundImage = 'url(' + slice_name + '_bl.jpg)';
         }
@@ -150,7 +150,8 @@ window.onload = () => {
         if(fl == false){
             menu_info.classList.add('active-m-info');
             news[count].classList.add('active-news');
-            body.style.backgroundImage = 'url(' + 'https://acrid122.github.io/kurss/images/news_' + (count + 1) + '_bl.jpg)';
+            let slice_name = elements.src.slice(0, elements.src.lastIndexOf('.'));
+            body.style.backgroundImage = 'url(' + slice_name + '_bl.jpg)';
             return_but.classList.add('active-ret');
             slider.classList.add('active');
             init();
